@@ -1,0 +1,115 @@
+name: 🪲 Bug report
+description: Report something that's not working as expected
+assignees: [TaffarelJr]
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Thanks for taking the time to help us fix something that's broken! 🤗
+        Please see
+        [`CONTRIBUTING.md`](https://github.com/TaffarelJr/.github/blob/main/CONTRIBUTING.md#how-do-i-submit-a-good-bug-report)
+        for more information on writing a good bug report.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: >
+        Please make sure these options have been tried
+        before submitting a new bug.
+      options:
+        - label: >
+            I've searched the
+            [Documentation](https://github.com/TaffarelJr/.github/tree/main/docs)
+            and [Wiki](https://github.com/TaffarelJr/.github/wiki)
+            for information on this topic,
+            and I'm sure it's a bug.
+          required: true
+        - label: >
+            I've searched and/or posted in the
+            [Discussions](https://github.com/TaffarelJr/.github/discussions)
+            about this bug.
+          required: true
+        - label: >
+            I've searched the existing
+            [Issues](https://github.com/TaffarelJr/.github/issues)
+            and this bug has not been reported yet.
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please give a clear and concise description of the bug.
+      placeholder: Description
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro-steps
+    attributes:
+      label: Reproduction Steps
+      description: >
+        Please include minimal steps to reproduce the bug if possible.
+        E.g.: the smallest possible code snippet;
+        or a small project, with steps to run it.
+        If possible, include text rather than images
+        (so it shows up in searches).
+      placeholder: Minimal reproduction steps
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: >
+        Provide a description of the expected behavior.
+        If possible, include text rather than images
+        (so it shows up in searches).
+      placeholder: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: >
+        Provide a description of the actual behavior observed.
+        If applicable, please include any error messages, stacktraces,
+        or memory dumps.
+        If possible, include text rather than images
+        (so it shows up in searches).
+      placeholder: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: configuration
+    attributes:
+      label: Configuration
+      description: |
+        Please provide more information on the environment where the bug occurred:
+        - Which version of this package are you using?
+        - Which version of .NET is the code running on?
+        - What OS and version, and what distro if applicable?
+        - What is the architecture (x86, x64, ARM, ARM64)?
+        - Do you know whether it's specific to that configuration?
+        - Which web browser(s) do you see the bug in?
+        - If relevant, what are the specs of the machine?
+      placeholder: Configuration details
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: >
+        If you have an idea where the problem might lie, let us know here.
+        Please include any relevant code, changes, or related issues you know of.
+      placeholder: Additional information
+    validations:
+      required: false
