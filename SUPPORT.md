@@ -53,9 +53,9 @@ from the [Remark][remark] repository.
 
 <!-- GitHub Footnotes -->
 
-[discussions]: https://github.com/TaffarelJr/.github/discussions
-[issues]: https://github.com/TaffarelJr/.github/issues
-[wiki]: https://github.com/TaffarelJr/.github/wiki
+[discussions]: https://github.com/TaffarelJr/.template-nuget-package/discussions
+[issues]: https://github.com/TaffarelJr/.template-nuget-package/issues
+[wiki]: https://github.com/TaffarelJr/.template-nuget-package/wiki
 
 <!-- Public Footnotes -->
 
