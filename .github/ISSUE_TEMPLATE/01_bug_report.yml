@@ -8,7 +8,7 @@ body:
       value: >
         Thanks for taking the time to help us fix something that's broken! 🤗
         Please see
-        [`CONTRIBUTING.md`](https://github.com/TaffarelJr/.template-nuget-package/blob/main/CONTRIBUTING.md#how-do-i-submit-a-good-bug-report)
+        [`CONTRIBUTING.md`](https://github.com/TaffarelJr/.github/blob/main/CONTRIBUTING.md#how-do-i-submit-a-good-bug-report)
         for more information on writing a good bug report.
 
   - type: checkboxes
@@ -21,19 +21,19 @@ body:
       options:
         - label: >
             I've searched the
-            [Documentation](https://github.com/TaffarelJr/.template-nuget-package/tree/main/docs)
-            and [Wiki](https://github.com/TaffarelJr/.template-nuget-package/wiki)
+            [Documentation](https://github.com/TaffarelJr/.github/tree/main/docs)
+            and [Wiki](https://github.com/TaffarelJr/.github/wiki)
             for information on this topic,
             and I'm sure it's a bug.
           required: true
         - label: >
             I've searched and/or posted in the
-            [Discussions](https://github.com/TaffarelJr/.template-nuget-package/discussions)
+            [Discussions](https://github.com/TaffarelJr/.github/discussions)
             about this bug.
           required: true
         - label: >
             I've searched the existing
-            [Issues](https://github.com/TaffarelJr/.template-nuget-package/issues)
+            [Issues](https://github.com/TaffarelJr/.github/issues)
             and this bug has not been reported yet.
           required: true
 

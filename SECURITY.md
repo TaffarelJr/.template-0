@@ -12,4 +12,4 @@ and may ask for additional information or guidance.
 
 <!-- GitHub Footnotes -->
 
-[advisories]: https://github.com/TaffarelJr/.template-nuget-package/security/advisories
+[advisories]: https://github.com/TaffarelJr/.github/security/advisories
