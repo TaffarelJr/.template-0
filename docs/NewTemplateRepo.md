@@ -63,11 +63,68 @@ to meet the needs of the new template:
 - Commit the changes to `main` with the message:
   `chore: customize initial repo files`
 
-### 6. Push the changes to GitHub
+### 6. Override Repository settings
+
+Most of the settings in the `.github/settings.yml`
+are fine to just live in the [`.github`][github] repo.
+In this new template repo, we just need to override a few settings.
+Replace the contents of the file with the following,
+filling in the values as marked:
+
+```yaml
+_extends: .github
+
+repository:
+  #─────────────────────────────────────────────────────────────────────────────
+  # "About" section (on repo home page)
+  #─────────────────────────────────────────────────────────────────────────────
+
+  # A short description of the repository
+  # MUST BE A SINGLE LINE
+  description: <1-line description>.
+
+  # A URL with more information about the repository
+  homepage: <URI, if applicable; otherwise, delete this property>
+
+  # A comma-separated list of topics to set on the repository
+  topics: <topic 1>, <topic 2>, ... # see https://github.com/topics
+
+  #─────────────────────────────────────────────────────────────────────────────
+  # Settings -> General
+  # https://github.com/repository-settings/app/blob/master/docs/plugins/repository.md
+  # https://docs.github.com/en/rest/repos/repos#update-a-repository
+  #─────────────────────────────────────────────────────────────────────────────
+
+  # The name of the repository
+  name: <name>
+```
+
+Commit the changes to `main` with the message: `chore: customize repo settings`
+
+### 7. Push the changes to GitHub
 
 No need for a PR yet, just push the `main` branch up.
 The settings should take effect almost immediately;
 verify that the repo description and tags are showing on the home page.
+
+### 8. Final repository configuration
+
+Not all repo settings can be managed from [`settings.yml`][settings].
+Some will still need to be set manually:
+
+- `Settings`
+  - `General`
+    - Check `Limit how many branches and tags can be updated in a single push`
+      - Up to `2` branches and tags can be updated in a push
+  - `Moderation options`
+    - `Code review limits`
+      - Check `Limit to users explicitly granted read or higher access`
+  - `Code security`
+    - Enable `Private vulnerability reporting`
+    - Enable `Dependency graph` _(if necessary)_
+    - Enable `Grouped security updates`
+    - Set up `CodeQL analysis`
+      - Use `Default`
 
 <!-- GitHub Footnotes -->
 
