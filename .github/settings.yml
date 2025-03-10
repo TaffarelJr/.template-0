@@ -1,0 +1,148 @@
+repository:
+
+  #─────────────────────────────────────────────────────────────────────────────
+  # Home Page
+  #─────────────────────────────────────────────────────────────────────────────
+
+  # Whether to allow private forks
+  allow_forking: true
+
+  # Whether downloads are enabled
+  has_downloads: true
+
+  #─────────────────────────────────────────────────────────────────────────────
+  # "About" section (on Home Page)
+  #─────────────────────────────────────────────────────────────────────────────
+
+  # A short description of the repository
+  # MUST BE A SINGLE LINE
+  description: Special repository that contains shared files.
+
+  # A URL with more information about the repository
+  homepage: https://github.com/TaffarelJr
+
+  # A comma-separated list of topics to set on the repository
+  topics: github, github-config
+
+  #─────────────────────────────────────────────────────────────────────────────
+  # Settings -> General
+  # https://github.com/repository-settings/app/blob/master/docs/plugins/repository.md
+  # https://docs.github.com/en/rest/repos/repos#update-a-repository
+  #─────────────────────────────────────────────────────────────────────────────
+
+  # The name of the repository
+  name: .github
+
+  # Whether the repository is available as a template
+  is_template: true
+
+  # Whether to require contributors to sign off on web-based commits
+  web_commit_signoff_required: false
+
+  # The default branch for the repository
+  default_branch: main
+
+  # Whether the wiki is enabled for this repository
+  has_wiki: true
+
+  # Whether issues are enabled for this repository
+  has_issues: true
+
+  # Whether discussions are enabled for this repository
+  has_discussions: true
+
+  # Whether projects are enabled for this repository
+  has_projects: true
+
+  # Whether to allow merging pull requests with a merge commit
+  allow_merge_commit: true
+
+  # Default value for a merge commit title (PR_TITLE|MERGE_MESSAGE)
+  merge_commit_title: MERGE_MESSAGE
+
+  # Default value for a merge commit message (PR_TITLE|PR_BODY|BLANK)
+  merge_commit_message: PR_TITLE
+
+  # Whether to allow squash-merging pull requests
+  allow_squash_merge: true
+
+  # Default value for a squash merge commit title (PR_TITLE|COMMIT_OR_PR_TITLE)
+  squash_merge_commit_title: COMMIT_OR_PR_TITLE
+
+  # Default value for a squash merge commit message (PR_BODY|COMMIT_MESSAGES|BLANK)
+  squash_merge_commit_message: COMMIT_MESSAGES
+
+  # Whether to allow rebase-merging pull requests
+  allow_rebase_merge: true
+
+  # Whether to always allow a pull request head branch
+  # that is behind its base branch to be updated
+  # even if it is not required to be up-to-date before merging
+  allow_update_branch: true
+
+  # Whether to allow auto-merge on pull requests
+  allow_auto_merge: false
+
+  # Whether to allow automatically deleting head branches
+  # when pull requests are merged
+  delete_branch_on_merge: true
+
+  # The visibility of the repository (public|private)
+  visibility: public
+
+  # Whether to archive this repository
+  # ('false' will unarchive a previously archived repository)
+  archived: false
+
+#───────────────────────────────────────────────────────────────────────────────
+# Settings -> Collaborators
+# https://github.com/repository-settings/app/blob/master/docs/plugins/collaborators.md
+# https://docs.github.com/en/rest/collaborators/collaborators
+#───────────────────────────────────────────────────────────────────────────────
+collaborators:
+
+  # These will be merged in with the existing collaborators.
+  # Any deletions will need to be done manually.
+
+#───────────────────────────────────────────────────────────────────────────────
+# Settings -> Branches
+# https://github.com/repository-settings/app/blob/master/docs/plugins/branches.md
+# https://docs.github.com/en/rest/branches/branch-protection
+#───────────────────────────────────────────────────────────────────────────────
+branches:
+
+#───────────────────────────────────────────────────────────────────────────────
+# Settings -> Rules -> Rulesets
+# https://github.com/repository-settings/app/blob/master/docs/plugins/rulesets.md
+# https://docs.github.com/en/rest/repos/rules#update-a-repository-ruleset
+#───────────────────────────────────────────────────────────────────────────────
+rulesets:
+
+#───────────────────────────────────────────────────────────────────────────────
+# Issues -> Labels
+# https://github.com/repository-settings/app/blob/master/docs/plugins/labels.md
+#───────────────────────────────────────────────────────────────────────────────
+labels:
+
+  # These will be merged in with the existing labels.
+  # Any deletions will need to be done manually.
+
+  - name: needs repro
+    color: D97B0B
+    description: Missing replication steps
+
+  - name: needs fix
+    color: FF6300
+    description: Looking for a solution
+
+  - name: critical
+    color: D93F0B
+    description: Highest priority
+
+  # - name: dependabot
+  #   color: 0075CA
+  #   description:
+
+  - name: template sync
+    color: 006B75
+    description: Changes replicated from template repository

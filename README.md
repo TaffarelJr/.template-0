@@ -158,6 +158,8 @@ Checked files are stored in this repo.
   automatically keep dependencies up-to-date.
   - Defined in this repo, synced other other repos.
   - Each repo may add additional ecosystems as needed.
+- [`settings.yml`][settings] — Defines the settings for a GitHub repository.
+  - Defined in this repo, [overridden in other repos][extends] as necessary.
 - [`docs/`][docs] — Contains additional information about various topics
   that apply to all repos.
   - Files only exist in this repo.
@@ -181,6 +183,7 @@ Checked files are stored in this repo.
 [dependabot]: ./.github/dependabot.yml
 [fund]: ./.github/FUNDING.yml
 [pr]: ./.github/pull_request_template.md
+[settings]: ./.github/settings.yml
 [docs]: ./docs/
 [editorDoc]: ./docs/EditorConfig.md
 [conventional]: ./docs/ConventionalCommits.md
@@ -202,3 +205,4 @@ Checked files are stored in this repo.
 
 [fcc]: https://www.freecodecamp.org/news/how-to-use-the-dot-github-repository
 [health]: https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file
+[extends]: https://github.com/probot/octokit-plugin-config#the-_extends-key
