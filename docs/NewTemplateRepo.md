@@ -12,12 +12,24 @@ First we need to actually create the repo.
 - The repository name should use the format: `.template-<type>`.
   - For example: `.template-NuGet`
 
-### 2. Clone the repo
+### 2. Configure template sync
+
+Next, we need to make sure the template sync matches up
+the commits in the new repo with those in the [`.github`][github] repo.
+To do this, we need to get the sync workflow running.
+Open the repo and go to `Settings` -> `Actions` -> `General`.
+
+- Check `Allow GitHub Actions to create and approve pull requests`
+
+Now go to `Actions` -> `Template Sync` -> `Run workflow` -> `main`
+and click `Run workflow`. It should complete with no changes.
+
+### 3. Clone the repo
 
 Clone the repo on your local machine so you can work with the files.
 Open it in Visual Studio Code.
 
-### 3. Customize template files
+### 4. Customize template files
 
 The files that were synced from the [`.github`][github] template
 need to be customized for this new template repo.
@@ -38,7 +50,7 @@ need to be customized for this new template repo.
     - `.github/ISSUE_TEMPLATE/03_feature_request.yml`
 - Commit the changes to `main` with the message: `chore: customize template files`
 
-### 4. Customize initial repo files
+### 5. Customize initial repo files
 
 Now all that's left is to customize the root repo files
 to meet the needs of the new template:
@@ -50,7 +62,7 @@ to meet the needs of the new template:
 - Commit the changes to `main` with the message:
   `chore: customize initial repo files`
 
-### 5. Push the changes to GitHub
+### 6. Push the changes to GitHub
 
 No need for a PR yet, just push the `main` branch up.
 The settings should take effect almost immediately;
