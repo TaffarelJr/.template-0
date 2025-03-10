@@ -10,6 +10,7 @@ as their template. So to create a new one, follow these steps:
 - [3. Customize template files](#3-customize-template-files)
 - [4. Customize root repo files](#4-customize-root-repo-files)
 - [5. Push the changes to GitHub](#5-push-the-changes-to-github)
+- [6. Run the template sync](#6-run-the-template-sync)
 
 ## 1. Create a new repository
 
@@ -80,6 +81,12 @@ git push
 
 The settings should take effect almost immediately;
 verify that the repo description and tags are showing on the home page.
+
+## 6. Run the template sync
+
+Next, we need to validate the template sync.
+To do this, go to `Actions` -> `Template Sync` -> `Run workflow` -> `main`
+and click `Run workflow`. It should complete with no changes.
 
 <!-- GitHub Footnotes -->
 

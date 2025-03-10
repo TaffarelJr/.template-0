@@ -1,0 +1,58 @@
+name: Template Sync
+
+on:
+  # Runs daily at midnight (https://crontab.guru/#0_0_1_*_*)
+  schedule:
+    - cron: "0 0 1 * *"
+
+  # Allows manual triggering
+  workflow_dispatch:
+
+jobs:
+  template-sync:
+    name: Sync with Template Repository
+    runs-on: ubuntu-latest
+
+    # https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Ensure full history for merging
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+      - name: Get latest changes from template
+        run: |
+          git remote add template https://github.com/TaffarelJr/.github.git || true
+          git fetch template
+
+      - name: Switch to new branch
+        run: |
+          git checkout -B template-sync origin/main
+
+      - name: Merge branches
+        run: |
+          git merge --no-edit template/main || true
+
+      - name: Push changes (if any)
+        run: |
+          git push --force origin template-sync
+        continue-on-error: true
+
+      - name: Create or update PR
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: template-sync
+          base: main
+          title: Merge changes from template repo
+          body: Automated sync from template repository.
+          labels: template sync
+          delete-branch: true

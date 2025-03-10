@@ -83,6 +83,7 @@ flowchart TB
 - [Description of Files in This Repo](#description-of-files-in-this-repo)
   - [Community Health Files](#community-health-files)
   - [GitHub Templates](#github-templates)
+  - [GitHub Workflows](#github-workflows)
   - [Other Files](#other-files)
 
 ## New Template Repo Checklist
@@ -142,6 +143,15 @@ Checked files are stored in this repo.
   - Defined in this repo, synced other other repos.
   - Each repo must override the URIs in the template file.
 
+### GitHub Workflows
+
+- [`Template Sync`][workflow] — Synchronizes changes from
+  the template repo to the child repo.
+  - Executes nightly at midnight.
+  - Can be manually executed.
+  - Defined in this repo, synced other other repos.
+  - Each repo must override the name of the template repo to sync with.
+
 ### Other Files
 
 - [`docs/`][docs] — Contains additional information about various topics
@@ -163,6 +173,7 @@ Checked files are stored in this repo.
 
 [issue]: ./.github/ISSUE_TEMPLATE/
 [config]: ./.github/ISSUE_TEMPLATE/config.yml
+[workflow]: ./.github/workflows/template-sync.yml
 [fund]: ./.github/FUNDING.yml
 [pr]: ./.github/pull_request_template.md
 [docs]: ./docs/
