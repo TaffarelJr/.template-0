@@ -147,6 +147,10 @@ Checked files are stored in this repo.
   in the template sync GitHub Action.
   - Defined in this repo, synced (manually) other other repos.
   - Each repo must override the template repo to sync with.
+- [`dependabot.yml`][dependabot] — Configures Dependabot to
+  automatically keep dependencies up-to-date.
+  - Defined in this repo, synced other other repos.
+  - Each repo may add additional ecosystems as needed.
 - [`docs/`][docs] — Contains additional information about various topics
   that apply to all repos.
   - Files only exist in this repo.
@@ -168,6 +172,7 @@ Checked files are stored in this repo.
 [config]: ./.github/ISSUE_TEMPLATE/config.yml
 [workflow]: ./.github/workflows/template-sync.yml
 [ignore]: ./.github/.templatesyncignore
+[dependabot]: ./.github/dependabot.yml
 [fund]: ./.github/FUNDING.yml
 [pr]: ./.github/pull_request_template.md
 [docs]: ./docs/
