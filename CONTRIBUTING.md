@@ -330,21 +330,21 @@ This guide is based on the [contributing.md][contrib] website.
 
 <!-- GitHub Footnotes -->
 
-[discussions]: https://github.com/TaffarelJr/.github/discussions
-[issues]: https://github.com/TaffarelJr/.github/issues
-[newBug]: https://github.com/TaffarelJr/.github/issues/new?template=01_bug_report.yml
-[newFeature]: https://github.com/TaffarelJr/.github/issues/new?template=03_feature_request.yml
-[newIssue]: https://github.com/TaffarelJr/.github/issues/new?template=02_performance_issue.yml
-[wiki]: https://github.com/TaffarelJr/.github/wiki
+[discussions]: https://github.com/TaffarelJr/.template-0/discussions
+[issues]: https://github.com/TaffarelJr/.template-0/issues
+[newBug]: https://github.com/TaffarelJr/.template-0/issues/new?template=01_bug_report.yml
+[newFeature]: https://github.com/TaffarelJr/.template-0/issues/new?template=03_feature_request.yml
+[newIssue]: https://github.com/TaffarelJr/.template-0/issues/new?template=02_performance_issue.yml
+[wiki]: https://github.com/TaffarelJr/.template-0/wiki
 
 <!-- Public Footnotes -->
 
 [cc]: https://www.conventionalcommits.org
-[ccCheat]: https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13
+[ccCheat]: https://gist.template-0.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13
 [contrib]: https://contributing.md/
 [contribEx]: https://contributing.md/example/
-[ghFork]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
-[ghStatus]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request
+[ghFork]: https://docs.template-0.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
+[ghStatus]: https://docs.template-0.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request
 [guidelines]: https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelinesPreview
 [licecap]: https://www.cockos.com/licecap
 [silentcast]: https://github.com/colinkeenan/silentcast
