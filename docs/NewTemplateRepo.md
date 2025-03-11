@@ -68,6 +68,7 @@ to meet the needs of the new template:
 - Generate a `.gitattributes` file using https://gitattributes.io/
 - Generate a `.gitignore` file using https://www.toptal.com/developers/gitignore
 - Replace the contents of the `README.md` file
+- Add any additional ecosystems to `dependabot.yml`
 - Add any additional root files necessary for the new template
 - Commit the changes with the message: `chore: customize root repo files`
 

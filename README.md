@@ -154,6 +154,10 @@ Checked files are stored in this repo.
 
 ### Other Files
 
+- [`dependabot.yml`][dependabot] — Configures Dependabot to
+  automatically keep dependencies up-to-date.
+  - Defined in this repo, synced other other repos.
+  - Each repo may add additional ecosystems as needed.
 - [`docs/`][docs] — Contains additional information about various topics
   that apply to all repos.
   - Files only exist in this repo.
@@ -174,6 +178,7 @@ Checked files are stored in this repo.
 [issue]: ./.github/ISSUE_TEMPLATE/
 [config]: ./.github/ISSUE_TEMPLATE/config.yml
 [workflow]: ./.github/workflows/template-sync.yml
+[dependabot]: ./.github/dependabot.yml
 [fund]: ./.github/FUNDING.yml
 [pr]: ./.github/pull_request_template.md
 [docs]: ./docs/
