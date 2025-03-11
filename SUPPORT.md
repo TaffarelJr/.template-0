@@ -53,13 +53,13 @@ from the [Remark][remark] repository.
 
 <!-- GitHub Footnotes -->
 
-[discussions]: https://github.com/TaffarelJr/.github/discussions
-[issues]: https://github.com/TaffarelJr/.github/issues
-[wiki]: https://github.com/TaffarelJr/.github/wiki
+[discussions]: https://github.com/TaffarelJr/.template-0/discussions
+[issues]: https://github.com/TaffarelJr/.template-0/issues
+[wiki]: https://github.com/TaffarelJr/.template-0/wiki
 
 <!-- Public Footnotes -->
 
-[remark]: https://github.com/remarkjs/.github/blob/main/support.md
+[remark]: https://github.com/remarkjs/.template-0/blob/main/support.md
 [rubberduck]: https://rubberduckdebugging.com
 [sandbox]: https://codesandbox.io
 [xy]: https://meta.stackexchange.com/questions/66377/what-is-the-xy-problem/66378#66378
