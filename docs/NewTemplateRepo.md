@@ -12,10 +12,25 @@ First we need to actually create the repo.
 - The repository name should use the format: `.template-<type>`.
   - For example: `.template-NuGet`
 
-### 2. Configure template sync
+### 2. Clone the repo
 
-Next, we need to make sure the template sync matches up
-the commits in the new repo with those in the [`.github`][github] repo.
+Clone the repo locally, and open it in Visual Studio Code.
+The [`.github`][github] repository needs to be added as an upstream remote
+so the template sync can match up the commits in the new repo
+with those in the [`.github`][github] repo. Execute the following commands:
+
+```bash
+# May need to configure an SSH key as well
+git remote add upstream git@github.com:TaffarelJr/.github.git
+git config remote.pushdefault origin
+git fetch upstream
+git reset --hard upstream/main
+git push --force
+```
+
+### 3. Run the template sync
+
+Next, we need to validate the template sync.
 To do this, we need to get the sync workflow running.
 Open the repo and go to `Settings` -> `Actions` -> `General`.
 
@@ -23,11 +38,6 @@ Open the repo and go to `Settings` -> `Actions` -> `General`.
 
 Now go to `Actions` -> `Template Sync` -> `Run workflow` -> `main`
 and click `Run workflow`. It should complete with no changes.
-
-### 3. Clone the repo
-
-Clone the repo on your local machine so you can work with the files.
-Open it in Visual Studio Code.
 
 ### 4. Customize template files
 
@@ -65,7 +75,7 @@ to meet the needs of the new template:
 
 ### 6. Override Repository settings
 
-Most of the settings in the `.github/settings.yml`
+Most of the settings in the `settings.yml`
 are fine to just live in the [`.github`][github] repo.
 In this new template repo, we just need to override a few settings.
 Replace the contents of the file with the following,
@@ -109,7 +119,7 @@ verify that the repo description and tags are showing on the home page.
 
 ### 8. Final repository configuration
 
-Not all repo settings can be managed from [`settings.yml`][settings].
+Not all repo settings can be managed from `settings.yml`.
 Some will still need to be set manually:
 
 - `Settings`
@@ -125,6 +135,16 @@ Some will still need to be set manually:
     - Enable `Grouped security updates`
     - Set up `CodeQL analysis`
       - Use `Default`
+
+### 9. Custom labels
+
+| Label           | Description                                 | Color   |
+| :-------------- | :------------------------------------------ | :------ |
+| `critical`      | Highest priority                            | #D93F0B |
+| `dependabot`    |                                             | #0075ca |
+| `needs-fix`     | Looking for a solution                      | #FF6300 |
+| `needs-repro`   | Missing replication steps                   | #D97B0B |
+| `template sync` | Changes replicated from template repository | #006B75 |
 
 <!-- GitHub Footnotes -->
 
