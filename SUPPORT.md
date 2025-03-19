@@ -53,9 +53,9 @@ from the [Remark][remark] repository.
 
 <!-- GitHub Footnotes -->
 
-[discussions]: https://github.com/TaffarelJr/.github/discussions
-[issues]: https://github.com/TaffarelJr/.github/issues
-[wiki]: https://github.com/TaffarelJr/.github/wiki
+[discussions]: https://github.com/TaffarelJr/.template-0/discussions
+[issues]: https://github.com/TaffarelJr/.template-0/issues
+[wiki]: https://github.com/TaffarelJr/.template-0/wiki
 
 <!-- Public Footnotes -->
 
